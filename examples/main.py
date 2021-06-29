@@ -4,7 +4,7 @@ from airflow import DAG
 from airflow.contrib.operators.spark_submit_operator import SparkSubmitOperator
 from airflow.models import Variable
 
-local_tz = pendulum.timezone("Europa/Kiev")
+local_tz = pendulum.timezone("Europe/Kiev")
 default_args = {
     'owner': 'andrii',
     'depends_on_past': False,
