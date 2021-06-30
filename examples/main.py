@@ -24,7 +24,7 @@ dag = DAG(dag_id='flight_search_dag',
 pyspark_app_home=Variable.get("PYSPARK_APP_HOME")
 
 flight_search_ingestion= SparkSubmitOperator(task_id='flight_search_ingestion',
-conn_id='spark_local',
+conn_id='spark',
 application=f'{pyspark_app_home}temp.py',
 total_executor_cores=4,
 packages="io.delta:delta-core_2.12:0.7.0,org.apache.spark:spark-sql-kafka-0-10_2.12:3.0.0",
