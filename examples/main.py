@@ -9,7 +9,7 @@ default_args = {
     'owner': 'mahdyne',
     'depends_on_past': False,
     'start_date': datetime(2020, 10, 10, tzinfo=local_tz),
-    'email': ['nematpour.ma@gmail.com'],
+    'email': ['shevlyakov.tlkpi@gmail.com'],
     'email_on_failure': True,
     'email_on_retry': True,
     'retries': 2,
