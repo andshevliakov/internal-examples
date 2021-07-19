@@ -34,7 +34,7 @@ spec:
   imagePullSecrets:
   - imagepull
   mainClass: org.apache.spark.examples.SparkPi
-  mainApplicationFile: "https://raw.githubusercontent.com/andshevliakov/temp/main/examples/main.py"
+  mainApplicationFile: "local:///tmp/temp.py"
   restartPolicy:
     type: Never
   driver:
